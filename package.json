@@ -14,5 +14,10 @@
     "mongoose": "^5.8.11",
     "morgan": "~1.9.1",
     "sync-request": "^6.1.0"
-  }
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "heroku-postbuild": "cd reactapp && npm install && npm run build"
+   }
 }
+
